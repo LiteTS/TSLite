@@ -12,22 +12,42 @@ export class CsvImportsComponent implements OnInit {
   private gridOptions: IgGrid;
   public id: string = "grid1";
   public csvFileImportList: CSVImportModel[] = [];
-  constructor() { }
+  constructor() {
+    this.csvFileImportList = [
+      { importId: 1, fileNameContract: 'abc', fileNameLocation: 'efg', databaseName: 'AIRExposure', exposureSetName: 'abc' }
+    ];
+  }
 
   ngOnInit() {
+
 
     this.gridOptions = {
       //dataSource: this.contracts,
       width: "100%",
-      primaryKey: "contractSID",
+      primaryKey: "importId",
       responseDataKey: "results",
       autoCommit: true,
       autoGenerateColumns: false,
       columns: [
-        { "headerText": "userLineOfBusiness", "key": "userLineOfBusiness", "dataType": "string", "width": "10%" },
-        { "headerText": "insuredName", "key": "insuredName", "dataType": "string", "width": "10%" },
-        { "headerText": "submitStatusCode", "key": "submitStatusCode", "dataType": "string", "width": "10%" },
-        { "headerText": "userDefined1", "key": "userDefined1", "dataType": "string", "width": "10%" },
+        { "headerText": "Contract", "key": "fileNameContract", "dataType": "string", "width": "10%" },
+        { "headerText": "Location", "key": "fileNameLocation", "dataType": "string", "width": "10%" },
+        { "headerText": "Database", "key": "databaseName", "dataType": "string", "width": "10%" },
+        { "headerText": "Exposure Set", "key": "exposureSetName", "dataType": "string", "width": "10%" },
+      ],
+      features: [
+        {
+          name: "Updating",
+        },
+        {
+          name: "Selection",
+          mode: "single"
+        },
+        {
+          name: "Filtering"
+        },
+        {
+          name: "Sorting"
+        }
       ]
 
     };

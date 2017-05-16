@@ -1,8 +1,10 @@
 <md-grid-list cols="4">
-  <md-grid-tile >
+  <md-grid-tile [rowspan]="1" [colspan] = "4">
     <tslite-filesdropzone>
     </tslite-filesdropzone>
   </md-grid-tile >
-  <md-grid-tile>
+  <md-grid-tile [rowspan]="2" [colspan] = "4">
+    <app-imports-root>
+          </app-imports-root>
   </md-grid-tile>
 </md-grid-list>

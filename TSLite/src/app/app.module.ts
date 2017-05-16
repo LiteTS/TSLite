@@ -10,7 +10,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { WorkflowComponent } from './components/workflow/workflow.component';
 import { AppRoutingModule } from "./routing/app.routing.module";
 import { FilesdropzoneComponent } from './components/workflow/filesdropzone/filesdropzone.component';
-import {FileDroppa} from 'file-droppa'
+import {FileDroppa} from 'file-droppa';
+import { CsvImportsComponent } from './components/workflow/imports-root/csv-imports/csv-imports.component';
+import { UpxImportsComponent } from './components/workflow/imports-root/upx-imports/upx-imports.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import {FileDroppa} from 'file-droppa'
     ImportsRootComponent,
     DashboardComponent,
     WorkflowComponent,
-    FilesdropzoneComponent
+    FilesdropzoneComponent,
+    CsvImportsComponent,
+    UpxImportsComponent
   ],
   imports: [
     BrowserModule,

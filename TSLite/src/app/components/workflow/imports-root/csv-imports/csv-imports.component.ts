@@ -7,7 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CsvImportsComponent implements OnInit {
 
-  constructor() { }
+  private gridOptions: IgGrid;
+    private id: string;
+    private data: any;
+
+    constructor() {
+        this.data = {abc:"xyz"};
+        this.id ='grid1';
+        this.gridOptions = {
+            dataSource: this.data,
+            width: "100%",
+            height: "400px",
+            autoGenerateColumns: true
+        };
+    }
 
   ngOnInit() {
   }

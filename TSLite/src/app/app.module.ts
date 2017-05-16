@@ -12,11 +12,11 @@ import { AppRoutingModule } from "./routing/app.routing.module";
 import { FilesdropzoneComponent } from './components/workflow/filesdropzone/filesdropzone.component';
 import {FileDroppa} from 'file-droppa';
 import { CsvImportsComponent } from './components/workflow/imports-root/csv-imports/csv-imports.component';
-import { UpxImportsComponent } from './components/workflow/imports-root/upx-imports/upx-imports.component'
-
+import { UpxImportsComponent } from './components/workflow/imports-root/upx-imports/upx-imports.component';
+import { IgGridComponent } from 'igniteui-angular2';
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent,IgGridComponent,
     ImportsRootComponent,
     DashboardComponent,
     WorkflowComponent,

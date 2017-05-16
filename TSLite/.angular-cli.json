@@ -20,8 +20,16 @@
       "prefix": "TSLite",
       "styles": [
         "styles.css"
+       
       ],
-      "scripts": [],
+      "scripts": [
+        "scripts/jquery-1.11.3.min.js",
+        "scripts/jquery-ui.min.js",
+        "scripts/infragistics.core.js",
+        "scripts/infragistics.lob.js",
+        "scripts/modernizr-2.8.3.js"
+   
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

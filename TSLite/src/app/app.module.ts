@@ -9,14 +9,16 @@ import { MaterialModule } from '@angular/material';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { WorkflowComponent } from './components/workflow/workflow.component';
 import { AppRoutingModule } from "./routing/app.routing.module";
-
+import { FilesdropzoneComponent } from './components/workflow/filesdropzone/filesdropzone.component';
+import {FileDroppa} from 'file-droppa'
 
 @NgModule({
   declarations: [
     AppComponent,
     ImportsRootComponent,
     DashboardComponent,
-    WorkflowComponent
+    WorkflowComponent,
+    FilesdropzoneComponent
   ],
   imports: [
     BrowserModule,
@@ -24,7 +26,8 @@ import { AppRoutingModule } from "./routing/app.routing.module";
     HttpModule,
     MaterialModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FileDroppa
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {FileDroppa} from 'file-droppa';
 
 @Component({
   selector: 'tslite-filesdropzone',
@@ -7,8 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FilesdropzoneComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
 
+
+   }
+    
  /**
      * You can override default dropZone area template with [dropZoneTemplate] parameter passed to fileDroppa component
      */
@@ -26,7 +30,9 @@ export class FilesdropzoneComponent implements OnInit {
     filesUpdated(files) {
         console.log("Store state updated! Current state: ", files)
     }
+     
 
+       
     /**
      * CALLBACKS
      */
@@ -51,6 +57,7 @@ export class FilesdropzoneComponent implements OnInit {
      * @returns formData or null
      */
     beforeFileUpload(formData){
+        console.log(formData)
         return formData;
     }
 
@@ -62,6 +69,7 @@ export class FilesdropzoneComponent implements OnInit {
      * @returns Boolean
      */
     beforeAddFile(file){
+        console.log(file.fullPath)
         return true;
     }
 

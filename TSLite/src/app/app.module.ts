@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
+import { FileUploadModule } from 'ng2-file-upload';
 import { AppComponent } from './app.component';
 import { ImportsRootComponent } from './components/workflow/imports-root/imports-root.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,6 +15,7 @@ import {FileDroppa} from 'file-droppa';
 import { CsvImportsComponent } from './components/workflow/imports-root/csv-imports/csv-imports.component';
 import { UpxImportsComponent } from './components/workflow/imports-root/upx-imports/upx-imports.component';
 import { IgGridComponent } from 'igniteui-angular2';
+import { UploadFilesComponent } from './components/workflow/upload-files/upload-files.component';
 @NgModule({
   declarations: [
     AppComponent,IgGridComponent,
@@ -22,7 +24,8 @@ import { IgGridComponent } from 'igniteui-angular2';
     WorkflowComponent,
     FilesdropzoneComponent,
     CsvImportsComponent,
-    UpxImportsComponent
+    UpxImportsComponent,
+    UploadFilesComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import { IgGridComponent } from 'igniteui-angular2';
     MaterialModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    FileDroppa
+    FileDroppa,
+    FileUploadModule
   ],
   providers: [],
   bootstrap: [AppComponent]

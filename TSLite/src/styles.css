@@ -1,3 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 @import '../node_modules/@angular/material/prebuilt-themes/indigo-pink.css';
 
+.file_dropZone_internal {
+    width: 1000px !important;
+    height: 100px !important;
+    vertical-align: top
+   
+}

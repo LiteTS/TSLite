@@ -69,7 +69,9 @@
   width: 100%;
 }
 
+
 /* Default class applied to drop zones on over */
+
 .another-file-over-class {
   border: dotted 3px green;
 }

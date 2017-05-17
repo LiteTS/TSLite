@@ -9,8 +9,8 @@ declare var jQuery: any;
   styleUrls: ['./csv-imports.component.css']
 })
 export class CsvImportsComponent implements OnInit {
-  private gridOptions: IgGrid;
-  public id: string = "grid1";
+  private csvgridOptions: IgGrid;
+  public id: string = "csvid";
   public csvFileImportList: CSVImportModel[] = [];
   constructor() {
     this.csvFileImportList = [
@@ -21,7 +21,7 @@ export class CsvImportsComponent implements OnInit {
   ngOnInit() {
 
 
-    this.gridOptions = {
+    this.csvgridOptions = {
       //dataSource: this.contracts,
       width: "100%",
       primaryKey: "importId",

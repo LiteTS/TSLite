@@ -10,7 +10,6 @@ import { MaterialModule } from '@angular/material';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { WorkflowComponent } from './components/workflow/workflow.component';
 import { AppRoutingModule } from "./routing/app.routing.module";
-import { FilesdropzoneComponent } from './components/workflow/filesdropzone/filesdropzone.component';
 import {FileDroppa} from 'file-droppa';
 import { CsvImportsComponent } from './components/workflow/imports-root/csv-imports/csv-imports.component';
 import { UpxImportsComponent } from './components/workflow/imports-root/upx-imports/upx-imports.component';
@@ -22,7 +21,7 @@ import { UploadFilesComponent } from './components/workflow/upload-files/upload-
     ImportsRootComponent,
     DashboardComponent,
     WorkflowComponent,
-    FilesdropzoneComponent,
+    
     CsvImportsComponent,
     UpxImportsComponent,
     UploadFilesComponent

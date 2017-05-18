@@ -74,13 +74,16 @@
         </table>
       </div>
       <div>
-        <div style="vertical-align: center;float:left">
-          Queue progress:
-          <div class="progress">
+          <span><b> Queue progress:</b></span>
+        <div class="row" >
+
+            <div class="col-md-7">
+                   <div class="progress">
             <div class=" progress-bar " role="progressbar " [ngStyle]="{ 'width': uploader.progress + '%' } "></div>
           </div>
         </div>
-        <div style="padding-top: 10px;vertical-align: center;float:right">
+
+       <div class="col-md-5">
           <button type="button " class="btn btn-success btn-s " (click)="uploader.uploadAll() " [disabled]="!uploader.getNotUploadedItems().length ">
                       <span class="glyphicon glyphicon-upload "></span> Upload all
                     </button>
@@ -90,6 +93,7 @@
           <button type="button " class="btn btn-danger btn-s " (click)="uploader.clearQueue() " [disabled]="!uploader.queue.length ">
                       <span class="glyphicon glyphicon-trash "></span> Remove all
                     </button>
+        </div>
         </div>
       </div>
     </div>

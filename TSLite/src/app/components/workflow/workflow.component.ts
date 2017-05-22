@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'tslite-workflow',
@@ -7,7 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WorkflowComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private router:Router) { }
+
+  private getAllImportedFiles (files:File[])
+  {
+
+  }
+
+onRelod()
+{
+ this.router.navigate(['/Dashboard'])
+}
 
   ngOnInit() {
   }

@@ -22,3 +22,10 @@ private handler = new Subject<Message>();
       .subscribe(callback,error);
   }
 }
+
+
+export class MessageBusTypes {
+
+  public static ImportFileUploaded :string = "ImportFileUploaded"
+
+}

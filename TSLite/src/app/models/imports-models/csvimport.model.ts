@@ -5,3 +5,12 @@ export interface CSVImportModel {
     databaseName: string;
     exposureSetName: string;
 }
+
+export interface CSVImportFilesCollectionModel {
+    contractFiles : File[];
+    locationFiles :File[];
+    imfFiles : File[];
+    reinsuranceFiles:File[];
+    stepsFunctionFiles :File[]
+
+}

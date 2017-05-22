@@ -15,13 +15,15 @@ import { CsvImportsComponent } from './components/workflow/imports-root/csv-impo
 import { UpxImportsComponent } from './components/workflow/imports-root/upx-imports/upx-imports.component';
 import { IgGridComponent } from 'igniteui-angular2';
 import { UploadFilesComponent } from './components/workflow/upload-files/upload-files.component';
+import { ImportCommonService } from './services/imports-services/import-common.service';
+import { MessageTransportService } from './services/common-services/message-transport.service';
 @NgModule({
   declarations: [
     AppComponent,IgGridComponent,
     ImportsRootComponent,
     DashboardComponent,
     WorkflowComponent,
-    
+
     CsvImportsComponent,
     UpxImportsComponent,
     UploadFilesComponent
@@ -36,7 +38,7 @@ import { UploadFilesComponent } from './components/workflow/upload-files/upload-
     FileDroppa,
     FileUploadModule
   ],
-  providers: [],
+  providers: [ImportCommonService,MessageTransportService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
